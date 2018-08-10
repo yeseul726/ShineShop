@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Nanum+Gothic');
+* {
+    margin: 0px;
+}
+
+html {
+    min-height: 100%;
+    margin: 0;
+}
+
+iframe {
+    border: 0px;
+    width: 100%;
+    height: 1200px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Nanum Gothic';
+    background-image: url("http://www.clue.co.kr/Images/main/main_bg.jpg");
+    position: relative;
+}
+
+header {
+    margin-top: -50px;
+    width: 100%;
+    height: 115px;
+    top: 0px;
+}
+
+header a {
+    text-decoration: none;
+    color: #e67171;
+    font-family: "Lobster";
+    font-size: 40pt;
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+nav {
+    background-color: white;
+    width: 100%;
+    height: 45px;
+    border-top: 1px solid #eb9e96;
+    border-bottom: 1px solid #eb9e96;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+    letter-spacing: 4px;
+    width: 200px;
+    height: 45px;
+    padding-top: 10px;
+    padding-bottom: 14px;
+    color: #696969;
+}
+
+nav li:hover {
+    background-color: #FEF1E9;
+    height: 100%;
+    transition: 0.5s;
+}
+
+article {
+    float: center;
+}
+
+section {
+    height: 1200px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eb9e96;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    color: white;
+}
+
+.btnType {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #303030;
+    height: 80px;
+    outline: none;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #aeaeae;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btnType2 {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #303030;
+    outline: none;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #aeaeae;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+select {
+    background-color: #ffffff;
+    color: #303030;
+    outline: none;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #aeaeae;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: -50px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #aeaeae;
+    border-radius: 7px;
+    outline: none;
+}
+
+/*img {
+    float: left;
+    margin-right: 50px;
+    margin-left: 200px;
+}*/
+
+figure div {
+    height: 396px;
+    padding-top: 70px;
+}
+
+body > div {
+    margin-top: 70px;
+}
+
+hr {
+    width: 600px;
+    border: 0px;
+    border-top: 1px solid #C99B89;
+}
+
+.sub_menu {
+    top: 0px;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+}
+
+.sub_menu ul {
+    list-style: none;
+}
+
+.sub_menu li {
+    display: inline;
+    margin: 10px;
+}
+
+.sub_menu a {
+    text-decoration: none;
+    color: #aeaeae;
+}
+
+.sub_menu li:hover {
+    text-decoration: underline;
+}
+
+#login {
+    text-align: right;
+}
+
+iframe {
+    height: 1200px;
+}
+
+fieldset {
+    border: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #373737;
+}
+
+select {
+    margin: 10px;
+}

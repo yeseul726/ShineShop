@@ -1,0 +1,125 @@
+create table ss_item(
+item_id varchar(50) not null,
+item_type varchar(50) not null,
+item_price int not null,
+item_mileage int not null,
+item_remaining int not null,
+item_buyCnt int default 0,
+item_image varchar(50) not null,
+primary key(item_id));
+
+create table ss_member(
+user_name varchar(50) not null,
+user_id varchar(50) not null,
+user_pw varchar(50) not null,
+user_nickname varchar(100) not null,
+user_email varchar(100) not null,
+user_tel varchar(50),
+user_address varchar(300) not null,
+user_mileage int default 0,
+user_regdate timestamp default now(),
+primary key(user_id));
+
+create table ss_cart(
+user_id varchar(50) not null,
+item_id varchar(50) not null);
+
+create table ss_buy(
+user_id varchar(50) not null,
+item_id varchar(50) not null,
+total_price int default 0,
+delivery_name varchar(50) not null,
+delivery_address varchar(300) not null,
+delivery_phonetel varchar(50) not null,
+delivery_hometel varchar(50) not null,
+delivery_memo varchar(100)
+duy_date timestamp not null);
+
+create table ss_qna(
+qid int auto_increment,
+title varchar(100) not null,
+content varchar(5000) not null,
+writer varchar(50) not null,
+write_date varchar(60) not null,
+answer varchar(5000) not null,
+primary key(qid));
+
+QNA 테이블 (질문, 관리자 답변까지 넣어서)
+
+
+insert into ss_item values('CLEP17105PPW', 'earring', 19900, 190, 500, '', 'CLEP17105PPW.jpg');
+insert into ss_item values('CLEP17802PPW', 'earring', 39900, 390, 500, '', 'CLEP17802PPW.jpg');
+insert into ss_item values('CLEP17803PPW', 'earring', 29900, 290, 500, '', 'CLEP17803PPW.jpg');
+insert into ss_item values('CLEP17808PPW', 'earring', 29900, 290, 500, '', 'CLEP17808PPW.jpg');
+insert into ss_item values('CLEP17812PPW', 'earring', 29900, 290, 500, '', 'CLEP17812PPW.jpg');
+insert into ss_item values('CLEP18408PPW', 'earring', 19900, 190, 500, '', 'CLEP18408PPW.jpg');
+insert into ss_item values('CLEP18420PPD', 'earring', 19900, 190, 500, '', 'CLEP18420PPD.jpg');
+insert into ss_item values('CLEP18421PPW', 'earring', 19900, 190, 500, '', 'CLEP18421PPW.jpg');
+insert into ss_item values('CLEP18422PPW', 'earring', 19900, 190, 500, '', 'CLEP18422PPW.jpg');
+insert into ss_item values('CLEP18505PPW', 'earring', 29900, 290, 500, '', 'CLEP18505PPW.jpg');
+
+insert into ss_item values('CLNR17A7JMPP', 'necklace', 19900, 190, 500, '', 'CLNR17A7JMPP.jpg');
+insert into ss_item values('CLNR17A7KMPW', 'necklace', 39900, 390, 500, '', 'CLNR17A7KMPW.jpg');
+insert into ss_item values('CLNR17A71MPW', 'necklace', 29900, 290, 500, '', 'CLNR17A71MPW.jpg');
+insert into ss_item values('CLNR17A74MPW', 'necklace', 29900, 290, 500, '', 'CLNR17A74MPW.jpg');
+insert into ss_item values('CLNR17A75MPW', 'necklace', 29900, 290, 500, '', 'CLNR17A75MPW.jpg');
+insert into ss_item values('CLNR1797AMPD', 'necklace', 19900, 190, 500, '', 'CLNR1797AMPD.jpg');
+insert into ss_item values('CLNR17371MPW', 'necklace', 39900, 390, 500, '', 'CLNR17371MPW.jpg');
+insert into ss_item values('CLNR17372MWL', 'necklace', 19900, 190, 500, '', 'CLNR17372MWL.jpg');
+insert into ss_item values('CLNR17974LPW', 'necklace', 19900, 190, 500, '', 'CLNR17974LPW.jpg');
+insert into ss_item values('CLNR18516MPW', 'necklace', 29900, 290, 500, '', 'CLNR18516MPW.jpg');
+
+insert into ss_item values('CLRR17A004PW', 'ring', 19900, 190, 500, '', 'CLRR17A004PW.jpg');
+insert into ss_item values('CLRR17C711PW', 'ring', 29900, 290, 500, '', 'CLRR17C711PW.jpg');
+insert into ss_item values('CLRR17C712PW', 'ring', 39900, 390, 500, '', 'CLRR17C712PW.jpg');
+insert into ss_item values('CLRR17C721PD', 'ring', 19900, 190, 500, '', 'CLRR17C721PD.jpg');
+insert into ss_item values('CLRR17C722PD', 'ring', 29900, 290, 500, '', 'CLRR17C722PD.jpg');
+insert into ss_item values('CLRR172001PW', 'ring', 39900, 390, 500, '', 'CLRR172001PW.jpg');
+insert into ss_item values('CLRR172002PW', 'ring', 19900, 190, 500, '', 'CLRR172002PW.jpg');
+insert into ss_item values('CLRR174005PW', 'ring', 29900, 290, 500, '', 'CLRR174005PW.jpg');
+insert into ss_item values('CLRR176010PW', 'ring', 39900, 390, 500, '', 'CLRR176010PW.jpg');
+insert into ss_item values('CLRR177741WW', 'ring', 19900, 190, 500, '', 'CLRR177741WW.jpg');
+
+insert into ss_item values('CLAB17A01CDL', 'wallet', 19900, 190, 500, '', 'CLAB17A01CDL.jpg');
+insert into ss_item values('CLAB17A01CPL', 'wallet', 29900, 290, 500, '', 'CLAB17A01CPL.jpg');
+insert into ss_item values('CLAB17A03SDL', 'wallet', 39900, 390, 500, '', 'CLAB17A03SDL.jpg');
+insert into ss_item values('CLAB17A03SLL', 'wallet', 19900, 190, 500, '', 'CLAB17A03SLL.jpg');
+insert into ss_item values('CLAB17A03SPL', 'wallet', 29900, 290, 500, '', 'CLAB17A03SPL.jpg');
+insert into ss_item values('CLAB18302SPL', 'wallet', 39900, 390, 500, '', 'CLAB18302SPL.jpg');
+insert into ss_item values('CLAB17201CBL', 'wallet', 19900, 190, 500, '', 'CLAB17201CBL.jpg');
+insert into ss_item values('CLAB17204SBL', 'wallet', 29900, 290, 500, '', 'CLAB17204SBL.jpg');
+insert into ss_item values('CLAB17205SPL', 'wallet', 39900, 390, 500, '', 'CLAB17205SPL.jpg');
+insert into ss_item values('CLAB17304SPL', 'wallet', 19900, 190, 500, '', 'CLAB17304SPL.jpg');
+
+insert into ss_item values('CL2G16B01MPP', 'watch', 19900, 190, 500, '', 'CL2G16B01MPP.jpg');
+insert into ss_item values('CL2G17A01MPP', 'watch', 29900, 290, 500, '', 'CL2G17A01MPP.jpg');
+insert into ss_item values('CL2G17A01MWW', 'watch', 29900, 290, 500, '', 'CL2G17A01MWW.jpg');
+insert into ss_item values('CL2G17201MWW', 'watch', 39900, 390, 500, '', 'CL2G17201MWW.jpg');
+insert into ss_item values('CL2G17401LPP', 'watch', 59900, 590, 500, '', 'CL2G17401LPP.jpg');
+insert into ss_item values('CL2G17401LWB', 'watch', 29900, 290, 500, '', 'CL2G17401LWB.jpg');
+insert into ss_item values('CL2G17401LWL', 'watch', 19900, 190, 500, '', 'CL2G17401LWL.jpg');
+insert into ss_item values('CL2G17401MPP', 'watch', 29900, 290, 500, '', 'CL2G17401MPP.jpg');
+insert into ss_item values('CL2G17401MWW', 'watch', 39900, 390, 500, '', 'CL2G17401MWW.jpg');
+insert into ss_item values('CL2G17402MPP', 'watch', 19900, 190, 500, '', 'CL2G17402MPP.jpg');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

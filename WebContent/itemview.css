@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Nanum+Gothic');
+* {
+    margin: 0px;
+}
+
+html {
+    min-height: 100%;
+    margin: 0;
+}
+
+iframe {
+    border: 0px;
+}
+
+body {
+    font-family: 'Nanum Gothic';
+}
+
+.btnType {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #303030;
+    height: 80px;
+    outline: none;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #aeaeae;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btnType2 {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #303030;
+    outline: none;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #aeaeae;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 11pt;
+}
+
+select {
+    background-color: #ffffff;
+    color: #303030;
+    outline: none;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #aeaeae;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: -50px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #aeaeae;
+    border-radius: 7px;
+    outline: none;
+}
+
+img {
+    float: left;
+    margin-right: 50px;
+}
+
+figure div {
+    height: 396px;
+    padding-top: 70px;
+}
+
+body > div {
+    margin-top: 70px;
+    float: center;
+}
+
+hr {
+    width: 600px;
+    border: 0px;
+    border-top: 1px solid #C99B89;
+}
+
+figure {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
